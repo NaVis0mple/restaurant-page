@@ -14,7 +14,14 @@ module.exports = {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource'
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192 // use base64 encoding for files smaller than 8KB
+            }
+          }
+        ]
       }
     ]
   },
