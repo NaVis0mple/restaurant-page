@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require("copy-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -14,9 +14,9 @@ module.exports = {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-    ],
+        type: 'asset/resource'
+      }
+    ]
   },
   devtool: 'inline-source-map',
   plugins: [
@@ -25,8 +25,8 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./src/img", to: "./distImg" },
-      ],
-    }),
+        { from: './src/img', to: './distImg' }
+      ]
+    })
   ]
 }

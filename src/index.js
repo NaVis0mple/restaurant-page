@@ -6,11 +6,10 @@ import * as Contact from './contact.js'
 document.body.style.display = 'flex'
 document.body.style.flexDirection = 'column'
 
-
 const headpart = (function () {
   const sethead = function () {
     const container = document.createElement('div')
-    container.style.display='flex'
+    container.style.display = 'flex'
     container.style.justifyContent = 'space-evenly'
     container.classList.add('headpart')
     container.appendChild(btnContainer)
@@ -28,7 +27,7 @@ const midpart = (function () {
     container.innerHTML = ''
     container.appendChild(Home.title)
   }
-  const showTab = ()=> {
+  const showTab = () => {
     btnMenu.addEventListener('click', () => {
       container.innerHTML = ''
       container.appendChild(Menu.title)
@@ -43,9 +42,8 @@ const midpart = (function () {
     })
   }
   defaultTab()
-  return { defaultTab, showTab  }
+  return { defaultTab, showTab }
 })()
 
 headpart.sethead()
 midpart.showTab()
-
