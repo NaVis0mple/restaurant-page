@@ -13,17 +13,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
-    ],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource'
+      }
+    ]
   },
   devtool: 'inline-source-map',
   plugins: [
