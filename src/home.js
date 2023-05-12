@@ -10,7 +10,7 @@ part2.innerHTML = 'pizzaaaaaaaaaaaa'
 title.append(part2)
 
 title.classList.add('container')
-title.style.backgroundImage = "url('./dist/distImg/photo.jpg')"
+title.style.backgroundImage = "url('dist/distImg/photo.jpg')"
 title.style.backgroundSize = 'contain'
 title.style.height = '95vh'
 
