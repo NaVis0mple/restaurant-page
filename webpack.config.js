@@ -1,6 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+// const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -23,10 +23,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'restaurant'
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: './src/img', to: './distImg' }
-      ]
-    })
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: './src/img', to: './distImg' }
+    //   ]
+    // })
   ]
 }

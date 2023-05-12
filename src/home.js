@@ -1,5 +1,5 @@
 // first body tab
-
+import homejpg from './img/home.jpg'
 const title = document.createElement('div')
 
 title.innerHTML = 'Best pizza maker in the word'
@@ -10,7 +10,7 @@ part2.innerHTML = 'pizzaaaaaaaaaaaa'
 title.append(part2)
 
 title.classList.add('container')
-title.style.backgroundImage = "url('https://navis0mple.github.io/restaurant-page/distImg/photo.JPG')"
+title.style.backgroundImage = `url(${homejpg})`
 title.style.backgroundSize = 'contain'
 title.style.height = '95vh'
 
