@@ -2,9 +2,6 @@ import { btnContainer, btnHome, btnMenu, btnContact } from './tab.js'
 import * as Home from './home.js'
 import * as Menu from './menu.js'
 import * as Contact from './contact.js'
-import img from 'https://navis0mple.github.io/restaurant-page/distImg/photo.JPG';
-import img1 from 'https://navis0mple.github.io/restaurant-page/distImg/menu.JPG';
-
 document.body.style.display = 'flex'
 document.body.style.flexDirection = 'column'
 
